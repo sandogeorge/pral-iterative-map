@@ -1,14 +1,12 @@
 """Implements methods to keep track of changes to the image."""
 
 
-image = None
+image = {}
 
 
-def setImage(img):
-    global image
-    image = img
+def setImage(key, img):
+    image[key] = img
 
 
-def getImage():
-    global image
-    return image
+def getImage(key):
+    return image[key]
