@@ -14,10 +14,13 @@ class Config(object):
     }
 
     WINDOWS = [
-        'Training Image',
-        'Training Output',
-        'Test Input',
-        'Test Output'
+        'Input Image',
+        'Skin Detection',
+        'Thresholding',
+        'Edge Detection',
+        'Contours',
+        'Hypothesis',
+        'Estimate'
     ]
 
     IMAGES = {
@@ -25,7 +28,9 @@ class Config(object):
         'apt-test': os.path.join(BASEDIR, 'app', 'files', 'hand-apt.jpg'),
         'false-test': os.path.join(BASEDIR, 'app', 'files', 'img-false.jpg'),
         'anon': os.path.join(BASEDIR, 'app', 'files', 'anon.png'),
-        'no-bg-test': os.path.join(BASEDIR, 'app', 'files', 'no-bg-test.jpg')
+        'no-bg-test': os.path.join(BASEDIR, 'app', 'files', 'no-bg-test.jpg'),
+        'hand-new': os.path.join(BASEDIR, 'app', 'files', 'hand-new.jpg'),
+        'apt-test-2': os.path.join(BASEDIR, 'app', 'files', 'hand-apt-2.jpg')
     }
 
     IMG_WIDTH = 256
@@ -47,11 +52,14 @@ class Config(object):
     THUMB_DEFAULT_ANGLE = 28
     THUMB_DEFAULT_RATIO = 1.13
 
-    FINGER_WIDTH = 8
+    FINGER_WIDTH = 6
 
     COLORS = {
         'black': (0, 0, 0),
-        'white': (255, 255, 255)
+        'white': (255, 255, 255),
+        'red': (0, 0, 255),
+        'green': (0, 255, 0),
+        'blue': (255, 0, 0)
     }
 
 
