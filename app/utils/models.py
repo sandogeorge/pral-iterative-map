@@ -58,7 +58,7 @@ class HandPalmar(Hand):
 
     def pinky(self, theta):
         if self.amax is not None:
-            return tuple(self.amax[2][0])
+            return tuple(self.amax[0])
 
         return (
             int(round(
@@ -115,7 +115,7 @@ class HandPalmar(Hand):
 
     def ring(self, theta):
         if self.amax is not None:
-            return tuple(self.amax[2][1])
+            return tuple(self.amax[1])
 
         return (
             int(round(
@@ -165,7 +165,7 @@ class HandPalmar(Hand):
 
     def middle(self, theta):
         if self.amax is not None:
-            return tuple(self.amax[2][2])
+            return tuple(self.amax[2])
 
         return (
             int(round(
@@ -215,7 +215,7 @@ class HandPalmar(Hand):
 
     def index(self, theta):
         if self.amax is not None:
-            return tuple(self.amax[2][3])
+            return tuple(self.amax[3])
 
         return (
             int(round(
@@ -272,7 +272,7 @@ class HandPalmar(Hand):
 
     def thumb(self, theta):
         if self.amax is not None:
-            return tuple(self.amax[2][4])
+            return tuple(self.amax[4])
 
         return (
             int(round(
