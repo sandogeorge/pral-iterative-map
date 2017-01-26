@@ -7,12 +7,6 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
 
-    FILES = {
-        'labels': os.path.join(BASEDIR, 'app', 'files', 'numpy', 'labels.npy'),
-        'logs': os.path.join(BASEDIR, 'app', 'files', 'numpy', 'logs.npy'),
-        'probs': os.path.join(BASEDIR, 'app', 'files', 'numpy', 'probs.npy')
-    }
-
     WINDOWS = [
         'Input Image',
         'Skin Detection',
