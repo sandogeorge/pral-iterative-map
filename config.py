@@ -14,7 +14,7 @@ class Config(object):
         'Edge Detection',
         'Contours',
         'Hypothesis',
-        'Estimate'
+        'MAP Estimate'
     ]
 
     IMAGES = {

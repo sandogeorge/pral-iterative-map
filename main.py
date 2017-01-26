@@ -63,7 +63,7 @@ def main():
         model_observation(cnt_max)
         cv2.imshow('Contours', getImage('contours'))
         cv2.imshow('Hypothesis', getImage('hypothesis'))
-        cv2.imshow('Estimate', getImage('estimate'))
+        cv2.imshow('MAP Estimate', getImage('estimate'))
 
         if (cv2.waitKey(0) & 0xFF) in [27, 255]:
             cv2.destroyAllWindows()
